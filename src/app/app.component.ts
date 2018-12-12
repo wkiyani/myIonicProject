@@ -3,11 +3,14 @@ import { Component, ViewChild } from '@angular/core';
 import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ListPage } from '../pages/list/list';
+// import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
+import { HTTP } from '@ionic-native/http';
+import { RegisterPage } from '../pages/register/register';
+import { LoginPage } from '../pages/login/login';
+import { WelcomePage } from '../pages/welcome/welcome';
 
 @Component({
   templateUrl: 'app.html'
@@ -30,7 +33,10 @@ export class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage }
+      { title: 'Registration page', component: RegisterPage },
+      { title: 'Login page', component: LoginPage },
+      { title: 'Welcome page', component: WelcomePage }
+      // { title: 'My First List', component: ListPage }
     ];
   }
 
