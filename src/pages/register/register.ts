@@ -25,7 +25,8 @@ export class RegisterPage {
 
   register() {
     if(this.password == this.confpass){
-      console.log('Username '+ this.username + ' with password ' + this.password + ' has registered');  
+      console.log('Username '+ this.username + ' with password ' + this.password + ' has registered'); 
+      
     } else {
       console.log('Username '+ this.username + ' with password ' + this.password + ' has attempted to register');
     }
